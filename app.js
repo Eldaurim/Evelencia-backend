@@ -21,6 +21,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/', authenticationRoutes);
-app.use('/user', userRoutes);
+app.use('/account', userRoutes);
 
 module.exports = app;

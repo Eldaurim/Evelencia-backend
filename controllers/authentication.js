@@ -3,6 +3,11 @@ const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv').config();
 
+exports.status = (req, res, next) => {
+  return res.status(200).json({ message: "I'm online!" })
+};
+
+
 exports.signup = (req, res, next) => {
   bcrypt.hash(req.body.password, 10)
   .then(hash => {
