@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const authenticationRoutes = require('./routes/authentication');
-const userRoutes = require('./routes/user');''
+const authenticationRoutes = require('./api/routes/authentication');
+const userRoutes = require('./api/routes/user');''
 
 const app = express();
 app.use(express.json());
