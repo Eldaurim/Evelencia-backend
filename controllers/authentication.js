@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv').config();
 
 exports.status = (req, res, next) => {
-  return res.status(200).json({ message: "I'm online!" })
+  return res.status(200).json({ message: "API_STATUS_ONLINE" })
 };
 
 
