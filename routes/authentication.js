@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const authenticationCtrl = require('../controllers/authentication');
+const authenticationCtrl = require('../api/authentication');
 
 router.get('/status', authenticationCtrl.status);
 router.post('/signup', authenticationCtrl.signup);
